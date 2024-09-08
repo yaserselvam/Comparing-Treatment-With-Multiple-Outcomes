@@ -1,4 +1,3 @@
-```markdown
 # Hypothesis Testing Visualization Repository
 
 ## Overview
