@@ -26,37 +26,62 @@ The repository includes the following R scripts:
 4. **Hypothesis Regions for Bivariate Test - Maximizing Type II Error**
    - Focuses on the configuration of hypothesis regions to maximize the Type II error in bivariate tests.
   
-     
+     ![Hypothesis_Regions_for_Bivariate_Test_Maximizing_Type_II_Error](Image/Hypothesis_Regions_for_Bivariate_Test_Maximizing_Type_II_Error.png)
 
 5. **Hypothesis Regions: Type I and Type II Errors**
    - Discusses the trade-offs between Type I and Type II errors in hypothesis testing.
+  
+     ![Hypothesis_Regions_Type_I_and_Type_II_Errors](Image/Hypothesis_Regions_Type_I_and_Type_II_Errors.png)
 
 6. **Hypothesis Testing Regions**
    - Provides a general overview and visualization of hypothesis testing regions.
+  
+     ![Hypothesis_Testing_Regions](Image/Hypothesis_Testing_Regions.png)
 
 7. **Low Correlation: Null (blue) vs. Alternative (red)**
    - Similar to the high correlation script but with low correlation scenarios.
+  
+     ![Low_Correlation_Null_(blue)_vs_Alternative_(red)](Image/Low_Correlation_Null_(blue)_vs_Alternative_(red).png)
 
 8. **Null (Blue) vs. Alternative (Red) Hypothesis Distributions**
    - Compares the distributions under null and alternative hypotheses with clear color-coded visualizations.
+  
+     ![Null_(Blue)_vs_Alternative_(Red)_Hypothesis_Distributions](Image/Null_(Blue)_vs_Alternative_(Red)_Hypothesis_Distributions.png)
 
 9. **Null vs. Alternative Hypothesis Distributions for a Right-Tailed Test**
    - Special focus on right-tailed tests comparing null and alternative hypothesis distributions.
+  
+     ![Null_vs_ Alternative_Hypothesis_Distributions_for_a_Right-Tailed_Test](Image/Null_vs_ Alternative_Hypothesis_Distributions_for_a_Right-Tailed_Test.png)
 
 10. **Right-Tailed Hypothesis Test Visualization for Z-Score**
     - Visualizes right-tailed hypothesis tests using Z-scores.
+   
+    -      ![High_Correlation_Null_(blue)_vs_Alternative_(red)](Image/High_Correlation_Null_(blue)_vs_Alternative_(red).png)
+
 
 11. **Trade-offs: Type I Error = 0.09 | Type II Error = 0.8895**
     - Analyzes the trade-offs between Type I and Type II errors with specific error rates.
+   
+    -      ![High_Correlation_Null_(blue)_vs_Alternative_(red)](Image/High_Correlation_Null_(blue)_vs_Alternative_(red).png)
+
 
 12. **Two Primary Endpoints with Co-Primary Outcome**
     - Explores hypothesis testing with two primary endpoints and a co-primary outcome scenario.
+   
+    -      ![High_Correlation_Null_(blue)_vs_Alternative_(red)](Image/High_Correlation_Null_(blue)_vs_Alternative_(red).png)
+
 
 13. **Type II Error Rate vs. Sample Size in Bivariate Testing**
     - Examines how the Type II error rate changes with sample size in bivariate tests.
+   
+    -      ![High_Correlation_Null_(blue)_vs_Alternative_(red)](Image/High_Correlation_Null_(blue)_vs_Alternative_(red).png)
+
 
 14. **Type II Error Rate vs. Sample Size**
     - A more general examination of the relationship between Type II error rates and sample size.
+   
+    -      ![High_Correlation_Null_(blue)_vs_Alternative_(red)](Image/High_Correlation_Null_(blue)_vs_Alternative_(red).png)
+
 
 ## Installation
 
