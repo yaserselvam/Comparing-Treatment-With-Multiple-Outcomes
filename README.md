@@ -56,20 +56,17 @@ The repository includes the following R scripts:
 10. **Right-Tailed Hypothesis Test Visualization for Z-Score**
     - Visualizes right-tailed hypothesis tests using Z-scores.
    
-    -      ![High_Correlation_Null_(blue)_vs_Alternative_(red)](Image/High_Correlation_Null_(blue)_vs_Alternative_(red).png)
-
+      ![Right-Tailed_Hypothesis_Test_Visualization_for_Z-Score](Image/Right-Tailed_Hypothesis_Test_Visualization_for_Z-Score.png)
 
 11. **Trade-offs: Type I Error = 0.09 | Type II Error = 0.8895**
     - Analyzes the trade-offs between Type I and Type II errors with specific error rates.
    
-    -      ![High_Correlation_Null_(blue)_vs_Alternative_(red)](Image/High_Correlation_Null_(blue)_vs_Alternative_(red).png)
-
+      ![Trade-offs_Type_I_Error_=_0.09_|_Type_II_Error_=_0.8895](Image/Trade-offs_Type_I_Error_=_0.09_|_Type_II_Error_=_0.8895.png)
 
 12. **Two Primary Endpoints with Co-Primary Outcome**
     - Explores hypothesis testing with two primary endpoints and a co-primary outcome scenario.
    
-    -      ![High_Correlation_Null_(blue)_vs_Alternative_(red)](Image/High_Correlation_Null_(blue)_vs_Alternative_(red).png)
-
+      ![Two_Primary_Endpoints_with_Co-Primary_Outcome](Image/Two_Primary_Endpoints_with_Co-Primary_Outcome.png)
 
 13. **Type II Error Rate vs. Sample Size in Bivariate Testing**
     - Examines how the Type II error rate changes with sample size in bivariate tests.
