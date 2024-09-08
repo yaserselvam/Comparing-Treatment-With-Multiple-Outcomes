@@ -1,4 +1,4 @@
-# Hypothesis Testing Visualization Repository
+# Comparing Treatment With Multiple Outcomes Repository
 
 ## Overview
 
