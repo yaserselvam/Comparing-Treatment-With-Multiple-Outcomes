@@ -71,14 +71,12 @@ The repository includes the following R scripts:
 13. **Type II Error Rate vs. Sample Size in Bivariate Testing**
     - Examines how the Type II error rate changes with sample size in bivariate tests.
    
-    -      ![High_Correlation_Null_(blue)_vs_Alternative_(red)](Image/High_Correlation_Null_(blue)_vs_Alternative_(red).png)
-
+      ![Type_II_Error_Rate_vs_Sample_Size_in_Bivariate_Testing](Image/Type_II_Error_Rate_vs_Sample_Size_in_Bivariate_Testing.png)
 
 14. **Type II Error Rate vs. Sample Size**
     - A more general examination of the relationship between Type II error rates and sample size.
    
-    -      ![High_Correlation_Null_(blue)_vs_Alternative_(red)](Image/High_Correlation_Null_(blue)_vs_Alternative_(red).png)
-
+      ![Type_II_Error_Rate_vs_Sample_Size](Image/Type_II_Error_Rate_vs_Sample_Size.png)
 
 ## Installation
 
