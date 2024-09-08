@@ -71,6 +71,7 @@ Contributions to this repository are welcome. Please fork the repository and sub
 ## License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details.
-```
 
+```r
 This is the README formatted according to GitHub markdown syntax. Feel free to further adjust any sections to fit the specific details of your repository.
+```
