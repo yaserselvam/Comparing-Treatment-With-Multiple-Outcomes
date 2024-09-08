@@ -20,9 +20,13 @@ The repository includes the following R scripts:
 
 3. **High Correlation: Null (blue) vs. Alternative (red)**
    - Plots distributions under the null and alternative hypotheses, emphasizing scenarios with high correlation.
+  
+     ![High_Correlation_Null_(blue)_vs_Alternative_(red)](Image/High_Correlation_Null_(blue)_vs_Alternative_(red).png)
 
 4. **Hypothesis Regions for Bivariate Test - Maximizing Type II Error**
    - Focuses on the configuration of hypothesis regions to maximize the Type II error in bivariate tests.
+  
+     
 
 5. **Hypothesis Regions: Type I and Type II Errors**
    - Discusses the trade-offs between Type I and Type II errors in hypothesis testing.
