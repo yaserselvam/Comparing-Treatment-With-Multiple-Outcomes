@@ -11,7 +11,7 @@ The repository includes the following R scripts:
 1. **Bivariate Hypothesis Regions with Maximized Type I Error**
    - Demonstrates how to configure hypothesis testing regions to maximize the Type I error in a bivariate setting.
   
-     ![Bivariate Hypothesis Regions Type I](Image/Bivariate_Hypothesis_Regions_with_Maximized_Type_I_Error.png)
+     ![Bivariate_Hypothesis_Regions_with_Maximized_Type_I_Error](Image/Bivariate_Hypothesis_Regions_with_Maximized_Type_I_Error.png)
 
 2. **Bivariate Normal Distribution with Type I Error Region**
    - Visualizes a bivariate normal distribution with regions that illustrate the Type I error.
