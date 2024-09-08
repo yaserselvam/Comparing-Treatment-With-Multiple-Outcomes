@@ -51,7 +51,7 @@ The repository includes the following R scripts:
 9. **Null vs. Alternative Hypothesis Distributions for a Right-Tailed Test**
    - Special focus on right-tailed tests comparing null and alternative hypothesis distributions.
   
-     ![Null_vs_ Alternative_Hypothesis_Distributions_for_a_Right-Tailed_Test](Image/Null_vs_ Alternative_Hypothesis_Distributions_for_a_Right-Tailed_Test.png)
+     ![Null_vs_Alternative_Hypothesis_Distributions_for_a_Right-Tailed_Test](Image/Null_vs_Alternative_Hypothesis_Distributions_for_a_Right-Tailed_Test.png)
 
 10. **Right-Tailed Hypothesis Test Visualization for Z-Score**
     - Visualizes right-tailed hypothesis tests using Z-scores.
