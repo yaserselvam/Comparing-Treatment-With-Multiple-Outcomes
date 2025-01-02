@@ -1,12 +1,12 @@
-# Comparing Treatment With Multiple Outcomes Repository
+# Comparing Treatment With Multiple Outcomes
 
 ## Overview
 
-This repository contains a series of R scripts developed to illustrate various aspects of hypothesis testing, particularly focusing on Type I and Type II errors, their trade-offs, and visualizations related to bivariate distributions and hypothesis testing under different conditions. These scripts are ideal for educational purposes, providing clear visual examples of statistical concepts.
+This project contains a series of R scripts developed to illustrate various aspects of hypothesis testing, particularly focusing on Type I and Type II errors, their trade-offs, and visualizations related to bivariate distributions and hypothesis testing under different conditions. These scripts are ideal for educational purposes, providing clear visual examples of statistical concepts.
 
 ## Scripts Description
 
-The repository includes the following R scripts:
+The project includes the following R scripts:
 
 1. **Bivariate Hypothesis Regions with Maximized Type I Error**
    - Demonstrates how to configure hypothesis testing regions to maximize the Type I error in a bivariate setting.
