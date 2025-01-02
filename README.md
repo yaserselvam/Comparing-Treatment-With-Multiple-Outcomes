@@ -92,14 +92,10 @@ source("path_to_script.R")
 
 Replace `path_to_script.R` with the path to the script you want to run.
 
-## Contributing
+## 💌 Contact
 
-Contributions to this repository are welcome. Please fork the repository and submit a pull request with your additions or changes.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details.
-
-```r
-This is the README formatted according to GitHub markdown syntax. Feel free to further adjust any sections to fit the specific details of your repository.
-```
+If you have any questions or suggestions, feel free to reach out:
+- Name: Yaser Selvam
+- Email: yaseruk259@gmail.com
+- LinkedIn: [Connect with me on LinkedIn](https://www.linkedin.com/in/yaserselvam)
+- GitHub: [Visit My GitHub Profile](https://github.com/yaserselvam)
