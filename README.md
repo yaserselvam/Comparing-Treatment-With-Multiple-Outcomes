@@ -1,101 +1,80 @@
 # Comparing Treatment With Multiple Outcomes
 
-## Overview
+### Hypothesis testing, error trade-offs, and statistical power when a treatment is judged on several correlated outcomes
 
-This project contains a series of R scripts developed to illustrate various aspects of hypothesis testing, particularly focusing on Type I and Type II errors, their trade-offs, and visualizations related to bivariate distributions and hypothesis testing under different conditions. These scripts are ideal for educational purposes, providing clear visual examples of statistical concepts.
+Simulation and visualisation code in R, from my **MSc Data Science and Analytics dissertation (University of Leeds)**.
 
-## Scripts Description
+## The problem
 
-The project includes the following R scripts:
+Evaluating a treatment on a **single** outcome is textbook hypothesis testing. But real treatments are usually judged on **several outcomes at once**: a drug that has to improve *two* co-primary endpoints, or an intervention measured across multiple correlated symptoms. Testing multiple outcomes changes the statistics in ways a single-outcome test hides:
 
-1. **Bivariate Hypothesis Regions with Maximized Type I Error**
-   - Demonstrates how to configure hypothesis testing regions to maximize the Type I error in a bivariate setting.
-  
-     ![Bivariate_Hypothesis_Regions_with_Maximized_Type_I_Error](Image/Bivariate_Hypothesis_Regions_with_Maximized_Type_I_Error.png)
+- the **rejection region becomes joint** (for co-primary endpoints, a treatment must clear the threshold on *both* outcomes), which lowers power;
+- the **correlation between outcomes** shifts both the false-positive rate and the power, so two studies with the same marginal effects can reach opposite conclusions;
+- controlling the overall **Type I error** across outcomes trades off directly against **Type II error** and the **sample size** needed to detect a real effect.
 
-2. **Bivariate Normal Distribution with Type I Error Region**
-   - Visualizes a bivariate normal distribution with regions that illustrate the Type I error.
+This project builds the intuition for those effects through a series of `ggplot2` simulations, using the **bivariate normal** as the working model for two correlated outcomes.
 
-     ![Bivariate_Normal_Distribution_with_Type_I_Error_Region](Image/Bivariate_Normal_Distribution_with_Type_I_Error_Region.png)
+## What's inside
 
-3. **High Correlation: Null (blue) vs. Alternative (red)**
-   - Plots distributions under the null and alternative hypotheses, emphasizing scenarios with high correlation.
-  
-     ![High_Correlation_Null_(blue)_vs_Alternative_(red)](Image/High_Correlation_Null_(blue)_vs_Alternative_(red).png)
+Each script in [`code/`](code/) is standalone and reproducible; figures are in [`image/`](image/).
 
-4. **Hypothesis Regions for Bivariate Test - Maximizing Type II Error**
-   - Focuses on the configuration of hypothesis regions to maximize the Type II error in bivariate tests.
-  
-     ![Hypothesis_Regions_for_Bivariate_Test_Maximizing_Type_II_Error](Image/Hypothesis_Regions_for_Bivariate_Test_Maximizing_Type_II_Error.png)
+**1. Single-test foundations**
+`right_tailed_hypothesis_test_visualization_for_z_score.R` ·
+`null_vs_alternative_hypothesis_distributions_for_a_right_tailed_test.R` ·
+`hypothesis_testing_regions.R` ·
+`hypothesis_regions_type_i_and_type_ii_errors.R`
 
-5. **Hypothesis Regions: Type I and Type II Errors**
-   - Discusses the trade-offs between Type I and Type II errors in hypothesis testing.
-  
-     ![Hypothesis_Regions_Type_I_and_Type_II_Errors](Image/Hypothesis_Regions_Type_I_and_Type_II_Errors.png)
+**2. The Type I / Type II error trade-off**
+`trade_offs_type_i_error_0_09_type_ii_error_0_8895.R` shows a worked point: pushing the false-positive rate down to α = 0.09 drives the false-negative rate up to β = 0.89. You cannot minimise both at a fixed sample size.
 
-6. **Hypothesis Testing Regions**
-   - Provides a general overview and visualization of hypothesis testing regions.
-  
-     ![Hypothesis_Testing_Regions](Image/Hypothesis_Testing_Regions.png)
+**3. Two correlated outcomes (bivariate)**
+`bivariate_normal_distribution_with_type_i_error_region.R` ·
+`bivariate_hypothesis_regions_with_maximized_type_i_error.R` ·
+`hypothesis_regions_for_bivariate_test_maximizing_type_ii_error.R`
 
-7. **Low Correlation: Null (blue) vs. Alternative (red)**
-   - Similar to the high correlation script but with low correlation scenarios.
-  
-     ![Low_Correlation_Null_(blue)_vs_Alternative_(red)](Image/Low_Correlation_Null_(blue)_vs_Alternative_(red).png)
+**4. How correlation changes the picture**
+`high_correlation_null_blue_vs_alternative_red.R` vs `low_correlation_null_blue_vs_alternative_red.R`: the same marginal effects, different outcome correlation, different overlap between the null and alternative.
 
-8. **Null (Blue) vs. Alternative (Red) Hypothesis Distributions**
-   - Compares the distributions under null and alternative hypotheses with clear color-coded visualizations.
-  
-     ![Null_(Blue)_vs_Alternative_(Red)_Hypothesis_Distributions](Image/Null_(Blue)_vs_Alternative_(Red)_Hypothesis_Distributions.png)
+**5. Co-primary endpoints**
+`two_primary_endpoints_with_co_primary_outcome.R`: the joint rejection region (top-right) when success requires clearing the threshold on both a primary and a co-primary endpoint.
 
-9. **Null vs. Alternative Hypothesis Distributions for a Right-Tailed Test**
-   - Special focus on right-tailed tests comparing null and alternative hypothesis distributions.
-  
-     ![Null_vs_Alternative_Hypothesis_Distributions_for_a_Right-Tailed_Test](Image/Null_vs_Alternative_Hypothesis_Distributions_for_a_Right-Tailed_Test.png)
+**6. Power and sample size**
+`type_ii_error_rate_vs_sample_size.R` and `type_ii_error_rate_vs_sample_size_in_bivariate_testing.R`: how the false-negative rate falls as the sample grows, univariate and in the two-outcome setting.
 
-10. **Right-Tailed Hypothesis Test Visualization for Z-Score**
-    - Visualizes right-tailed hypothesis tests using Z-scores.
-   
-      ![Right-Tailed_Hypothesis_Test_Visualization_for_Z-Score](Image/Right-Tailed_Hypothesis_Test_Visualization_for_Z-Score.png)
+## Selected figures
 
-11. **Trade-offs: Type I Error = 0.09 | Type II Error = 0.8895**
-    - Analyzes the trade-offs between Type I and Type II errors with specific error rates.
-   
-      ![Trade-offs_Type_I_Error_=_0.09_|_Type_II_Error_=_0.8895](Image/Trade-offs_Type_I_Error_=_0.09_|_Type_II_Error_=_0.8895.png)
+**Co-primary endpoints, joint rejection region**
 
-12. **Two Primary Endpoints with Co-Primary Outcome**
-    - Explores hypothesis testing with two primary endpoints and a co-primary outcome scenario.
-   
-      ![Two_Primary_Endpoints_with_Co-Primary_Outcome](Image/Two_Primary_Endpoints_with_Co-Primary_Outcome.png)
+![Two primary endpoints with a co-primary outcome](image/two_primary_endpoints_with_co_primary_outcome.png)
 
-13. **Type II Error Rate vs. Sample Size in Bivariate Testing**
-    - Examines how the Type II error rate changes with sample size in bivariate tests.
-   
-      ![Type_II_Error_Rate_vs_Sample_Size_in_Bivariate_Testing](Image/Type_II_Error_Rate_vs_Sample_Size_in_Bivariate_Testing.png)
+**The Type I / Type II error trade-off**
 
-14. **Type II Error Rate vs. Sample Size**
-    - A more general examination of the relationship between Type II error rates and sample size.
-   
-      ![Type_II_Error_Rate_vs_Sample_Size](Image/Type_II_Error_Rate_vs_Sample_Size.png)
+![Type I error 0.09 versus Type II error 0.8895](image/trade_offs_type_i_error_0_09_type_ii_error_0_8895.png)
 
-## Installation
+**Outcome correlation changes null/alternative overlap**
 
-To run these scripts, you will need R installed on your computer. You can download and install R from [The Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/mirrors.html).
+![High correlation, null vs alternative](image/high_correlation_null_blue_vs_alternative_red.png)
+![Low correlation, null vs alternative](image/low_correlation_null_blue_vs_alternative_red.png)
 
-## Usage
+**Power grows with sample size (two-outcome setting)**
 
-To execute any script, load it into your R environment and run:
+![Type II error rate vs sample size in bivariate testing](image/type_ii_error_rate_vs_sample_size_in_bivariate_testing.png)
+
+## Reproduce
 
 ```r
-source("path_to_script.R")
+install.packages(c("MASS", "dplyr", "ggplot2"))
+
+# Each script in code/ is self-contained; run any one to produce its figure.
+source("code/two_primary_endpoints_with_co_primary_outcome.R")
 ```
 
-Replace `path_to_script.R` with the path to the script you want to run.
+R >= 4.0. Simulations draw correlated outcomes with `MASS::mvrnorm` under a fixed `set.seed`, so every figure is reproducible.
 
-## 💌 Contact
+## Scope
 
-If you have any questions or suggestions, feel free to reach out:
-- Name: Yaser Selvam
-- Email: yaseruk259@gmail.com
-- LinkedIn: [Connect with me on LinkedIn](https://www.linkedin.com/in/yaserselvam)
-- GitHub: [Visit My GitHub Profile](https://github.com/yaserselvam)
+These are the illustrative simulations and figures from the dissertation: the aim is to make the multiple-outcome error and power trade-offs visible and statistically correct, not to report a specific trial's results. Built with `MASS` (bivariate-normal simulation), `dplyr`, and `ggplot2`.
+
+## License
+
+Released under the [MIT License](LICENSE).
